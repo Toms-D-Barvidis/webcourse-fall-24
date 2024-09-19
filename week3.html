@@ -16,7 +16,7 @@
     <p>The goal of this class is to showcase semantic tags, show links, include images and even tables. To add images, use the img source. src="link_to_image". Always include alt text! Doing it correctly is creating an image folder here, not hotlink random pictures from the web.</p>
         <h2>Hotlink to an image</h2>
         <div><div><img src="https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100" alt="Silly picture  a dog" height="200" width="280"></div>What happens now?</div>
-    <p>Hotlinking pictures is a bad idea. You can look for free images on <a href="unsplash.com" target="_blank">unsplash.com</a> </p>
+    <p>Hotlinking pictures is a bad idea. You can look for free images on <a href="https://www.unsplash.com" target="_blank">unsplash.com</a> </p>
     <h2>This picture is not hotlinked</h2>
     <p>This picture is stored in the images folder in my Visual Studio Code thingy. This particular picture is just sized down with the height and width properties. It is also embedded within the div tag. It forces the image on a new line (a side effect) and is used to group several elements as blocks.
         <div><img src="images/couches.drawio.png" alt="Flowchart for buying a coach online" width="500" height="250"> <p>Flowchart</p></div>
@@ -31,7 +31,37 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1018.3487772126329!2d24.13102464605717!3d56.95106168691805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2slv!4v1726763378263!5m2!1sen!2slv" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
      </div>
      <p>Pages usually start with a header, main and footer tags.</p>
+     <hr>
+     <h2>Tables! Tables! Tables!</h2>
+     <p>
+        Tables are used to arrange content in a grid. But above the heading, I just used the hr tag - a thematic break.
+     </p>
+     <p>The table tag is just done, table. It embeds tr for table rows, th for table headers and td for table data.</p>
+     <table>
+        <tr>
+            <th>Heading</th>
+            <th>Heading</th>
+            <th>Heading</th>
+        </tr>
+        <tr>
+            <td>AAaaa</td>
+            <td>Bbbb</td>
+            <td>Ccctss</td>
+        </tr>
+        <tr>
+            <td>Third row</td>
+            <td>Some</td>
+            <td>Data</td>
+        </tr>
+
+     </table>
+     <h2>Simple audio player</h2>
+     <p>Use the audio tag and closing tag with the attribute controls to add a little audio player to the website. Within the audio tags, use a source tag, add an attribute src="adress". The source tag does not need a closing tag.</p>
+     <audio controls>
+        <source src="/audio/elemental-magic-spell-impact-outgoing-228342.mp3">
+     </audio>
     </main>
+    <hr>
 </body>
 <footer id="footer">
     <p>This is the footer. </p>
