@@ -1,0 +1,30 @@
+body {
+    background-color: blanchedalmond;
+}
+
+main {
+   background-color: bisque; 
+   margin-left: 150px;
+   margin-right: 300px;
+}
+p {
+    background-color: rgb(222, 192, 157);
+    border: 1cm;
+    border-radius: ;
+}
+strong{
+    color: blueviolet;
+    font-weight: bolder;
+}
+img{
+    float: left;
+    margin: 10px;
+}
+
+h2 {
+    background-color: lightgreen;
+}
+
+.internal-h2{
+    background-color: darkcyan;
+}

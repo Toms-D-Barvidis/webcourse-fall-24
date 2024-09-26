@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 4 - CSS Basics</title>
-</head>
-<header>
     <style>
         header {background-color: aquamarine;}
     </style>
-    <p>I like this class but it's just sooo chaotic wtf.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/week4.css">
+    <title>Week 4 - CSS Basics</title>
+</head>
+<header id="top">
+    <p>I like this class but it's just sooo chaotic wtf. <br>
+    <a href="index.html">Back to main</a></p>
 </header>
 <hr>
 <body>
-    
-<main>
+    <main>
     <h1>CSS - Cascading Style Sheets</h1>
     <p>Answers many questions, but mainly handles appearances.</p>
     <p> <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics"> CSS basics </a>: link to CSS Basics </p>
 <h2> Internal CSS</h2>
-    <p>  There's a paired style tag for including CSS into html docs, but this is the least common way of doing CSS. This body has the tag and between them - body {background-color: aquamarine} that makes this terrible page. Styles that element for the whole page; of course, there is only one header for the page, but if there were many, all would be aquamarine. </p>
-        <img src="images/internal_css.png" alt="a screenshot of code">
+    <p>        <img src="images/internal_css.png" alt="a screenshot of code">
+          There's a paired style tag for including CSS into html docs, but this is the least common way of doing CSS. This body has the tag and between them - body {background-color: aquamarine} that makes this terrible page. Styles that element for the whole page; of course, there is only one header for the page, but if there were many, all would be aquamarine. </p>
+
+
     <p>If you select an element and hit Ctrl + D, you get another cursor! And you can have more than just 2! This is actually pretty amazing</p>
-    <hr>
-    <h2>Inline CSS</h2>
+    <h2 class="internal-h2">Inline CSS</h2>
     <p>Inline CSS is added directly to the HTML element. It is not reccomended to use inline CSS for styling the whole pge - it's a lot of work, styling each and every element. In case of conflicting styling, inline styling will win out</p>
     <p style="color: red">This text is red because it has inline style, within the opening p tag </p>
+    <h2>The common approach</h2>
+    <img src="/images/css-declaration-small.png" alt="anatomy of css" width="425">
+    <p>The normal way of doing CSS is to do it in a new file and include it in the webpage. Make a Styles folder (not obligatory but considered good... style). And then in the file write instructions how to format various objects. You can even use multiple seectors, just separate them with a comma. But in the webpage, you have to link the style sheet in a single tag link (see head for his page).</p>
+    <p>Both <strong> inline </strong> and <strong>internal</strong> CSS will overwrite this CSS. The last rule wins!</p>
+    <p>This is also how you can change the appeare for strong or emphasized elements.</p>
+    <p>Don't g overboard with using underline for text, because that makes them look like hyperlinks, especially if they are blue or purple (like a link that has already been clicked lmao)</p>
+    <p>You can assign random class to different object and then use CSS to style everything with that class. In that case, use the class name as the selector, and add a little dot before it. Likewise, if you have element with the id attribute, you can style that, too, but use a hash.It didn't work for me in class, so, if you want to use it, maybe google or smth, I don't know.</p>
+    <p>And there's also an !important rule, that will override any other rule, as long as that is not important, too.</p>
+    </main>
 <footer>
-
+<a href="#top">Back to top</a>
 </footer>
 </body>
 </html>
