@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles/week5.css">
 </head>
 <body>
-    <header id="header">
+    <header id="header" style="text-align: center;">
         <h1>CSS Positioning</h1>
         <a href="index.html">Back to main</a>
     </header>
     <hr>
-    <main style="margin: 1cm;">
+    <main style="margin-left: 5%; margin-right: 15%;">
         <h2>Box model</h2>
         <p>Every website is basically just a bunch of boxes - every element is a rectangular box. There are <b>block boxes</b> and <b>inline boxes</b>.</p>
         <h3>Block box elements</h3>
@@ -33,6 +33,22 @@
         <h4>Examples - SPAN</h4>
         <p>
             Lorem ipsum dolor sit amet <span class="spanny">span something span</span> and also <strong> strong</strong>. Lorem ipsum dolor <em>sit amet, consectetur</em> adipiscing elit, sed do eiusmod tempor incididunt ut <span class="spenny"> labore et dolore magna </span>aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure <strong>dolor in reprehenderit in voluptate</strong> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur <span class="spanny">sint occaecat cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <h2>Margins and padding</h2>
+        <p>Margins can be defined in pixels, centimers or percent. Actually, also inches and whatnot, but who even does that, wtf. Pixels are pretty standard, but percent makes it keep those settings when zooming in and out.</p>
+        <div class="blocky-1">Block element 1 - This one has a margin of 10 px, lightblue background and a border of 3 px, solid and black.</div>
+        <div class="blocky-2">Block element 2 - This one has a border that has rounded corners, border-radius controls the roundedness of them.</div>
+        <div class="blocky-3">Block element 3 - This one has padding. Margins separate elements. Padding separates content from borders.</div>
+        <div class="blocky-4">Block element 4</div>
+        <p>Moving on to positioning...</p>
+        <h2>Positioning</h2>
+        <p>
+        <ul>
+            <li>Static - default. Puts the element in the flow.</li>
+            <li>Relative - based on parent</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+        </ul>    
+        </p>
     </main>
     <hr>
     <footer>

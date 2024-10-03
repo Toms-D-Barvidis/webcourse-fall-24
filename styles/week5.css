@@ -13,3 +13,25 @@
 .spenny{
     color: blue;
 }
+
+.blocky-1{
+    background: lightblue;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.blocky-2{
+    background-color: bisque;
+    border: 3px solid black;
+    /* lets make it round */
+    border-radius: 5px;
+    margin: 25px;
+}
+
+.blocky-3{
+    background-color: antiquewhite;
+    margin: 5px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+}
