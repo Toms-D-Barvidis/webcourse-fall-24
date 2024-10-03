@@ -28,7 +28,7 @@
         <p>
             Inline elements follow each other in the same line, hence inline elements; they continue within the width of the parent element. Anchors are an inline element. If you want an inline element to act as a block element, just put it in a DIV lmao hack.
         </p>
-        <p>Inline elements are sorta evil and will drive you crazy. They're sizes are really hard to change.</p>
+        <p>Inline elements are sorta evil and will drive you crazy. Their sizes are really hard to change.</p>
         <p>A generic inline element is SPAN.</p>
         <h4>Examples - SPAN</h4>
         <p>
@@ -38,17 +38,20 @@
         <div class="blocky-1">Block element 1 - This one has a margin of 10 px, lightblue background and a border of 3 px, solid and black.</div>
         <div class="blocky-2">Block element 2 - This one has a border that has rounded corners, border-radius controls the roundedness of them.</div>
         <div class="blocky-3">Block element 3 - This one has padding. Margins separate elements. Padding separates content from borders.</div>
-        <div class="blocky-4">Block element 4</div>
-        <p>Moving on to positioning...</p>
+        <div class="blocky-4">Block element 4 - This has relative positioning.</div>
+        <div class="blocky-5">Block element 5 - This one has absolute positioning.</div>
+        <div class="blocky-6">Block element 6 - Fixed positioning.</div>
+        <p><br><br>Moving on to positioning...</p>
         <h2>Positioning</h2>
         <p>
         <ul>
             <li>Static - default. Puts the element in the flow.</li>
-            <li>Relative - based on parent</li>
-            <li>Absolute</li>
-            <li>Fixed</li>
+            <li>Relative - based on parent element. Just CSS for blocky-4. Use wisely, the elements can end up overlapping some other element.</li>
+            <li>Absolute - will take the element out of the flow / the normal layout. It pushes the element to the nearest defined position of a parent element, unless defined. Used very rarely and fucks up everything. Check block element 5.</li>
+            <li>Fixed - much more useful than absolute, but relative to viewport, not parent element. Check block element 6. Can be useful for navigation or other elemements like that.</li>
         </ul>    
         </p>
+        <p>There's also z index for controlling which element is on top in case of overlapping elements. Default is zero, elements with higher index are pushed to the surface. </p>
     </main>
     <hr>
     <footer>
