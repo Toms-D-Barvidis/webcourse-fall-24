@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 5</title>
+    <link rel="stylesheet" href="styles/week5.css">
 </head>
 <body>
     <header id="header">
         <h1>CSS Positioning</h1>
         <a href="index.html">Back to main</a>
     </header>
-    <main>
+    <hr>
+    <main style="margin: 1cm;">
         <h2>Box model</h2>
-        <p>Every website is basically just a bunch of boxes.</p>
+        <p>Every website is basically just a bunch of boxes - every element is a rectangular box. There are <b>block boxes</b> and <b>inline boxes</b>.</p>
+        <h3>Block box elements</h3>
+        <p>Occupy the full space of its parent element - has the same width as the parent element. DIV is a classical block element. Multiple elements just keep going down like a stack from top to down. You can use a hack to create a lot of div blocks by typing <i>. * number</i> of elements.</p>
+        <p>Paragraphs are blocks, too, but, for example, anchors are not.</p>
+        <h4>Examples - DIVs</h4>
+        <p>DIV is a block without a semantic meaning, it is used to organize other elements. So, websites are mostly just a bunch of DIVs.</p>
+        <div class="primy">Block element 1</div>
+        <div class="secondy" >Block element 2</div>
+        <div class="primy">Block element 3</div>
+        <div class="secondy">Block element 4</div>
+        <h3>Inline box elements</h3>
+        <p>
+            Inline elements follow each other in the same line, hence inline elements; they continue within the width of the parent element. Anchors are an inline element. If you want an inline element to act as a block element, just put it in a DIV lmao hack.
+        </p>
+        <p>Inline elements are sorta evil and will drive you crazy. They're sizes are really hard to change.</p>
+        <p>A generic inline element is SPAN.</p>
+        <h4>Examples - SPAN</h4>
+        <p>
+            Lorem ipsum dolor sit amet <span class="spanny">span something span</span> and also <strong> strong</strong>. Lorem ipsum dolor <em>sit amet, consectetur</em> adipiscing elit, sed do eiusmod tempor incididunt ut <span class="spenny"> labore et dolore magna </span>aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure <strong>dolor in reprehenderit in voluptate</strong> velit esse cillum dolore eu fugiat nulla pariatur. Excepteur <span class="spanny">sint occaecat cupidatat</span> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
     </main>
+    <hr>
     <footer>
-        <p><a href="#header">Back to top</a></br>
+        <p> <a href="#header">Back to top</a><br>
         <a href="index.html">Back to main</a></p>
     </footer>
 </body>
