@@ -1,0 +1,41 @@
+
+header{
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+body{
+    background-color: bisque;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 24px;
+}
+
+.code{
+    background-color: white;
+}
+
+
+/* Applying MQs by taking width into account, starting from the smallest screens. Google common breakpoints, for example. */
+/* Commenting wrks by CTRL + forward slash :))) */
+@media (min-width: 570px) {
+    body{
+        font-size: 18px;
+    }
+    header{
+        background-color: brown;
+    }
+}
+
+@media (min-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+    header{
+        background-color: rgb(255, 68, 0);
+    }
+    footer{
+        background-color: rgb(231, 156, 156);
+    }
+}

@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MQ and Flexbox</title>
+    <link rel="stylesheet" href="styles/week6.css">
 </head>
-<body style="margin-left: 15%;">
+<body>
     <header id="header" style="text-align: center;">
         <h1>CSS - Flexbox and Media Queries</h1>
         <a href="index.html">Back to main</a>
     </header>
     <main>
         <h2>Media Queries</h2>
-        <p>MQ allow to apply different CSS styles depending on a device's media type (e.g. print vs screen), screen resolution, orientation, aspect ration, width and height, etc. </p>
+        <p>MQ allow to apply different CSS styles depending on a device's media type (e.g. print vs screen), screen resolution, orientation, aspect ration, width and height, etc. More on <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">W3 schools here</a>.</p>
+        <p>Media Queries are implemented for specific resolutions, and they act upon CSS styling. Essentially, they work conditionally. It starts with a @media thingy, then has a rule, i.e. <br>
+            <div class="code">@media (max-width: 1250px){...}</div><br> 
+        and then you just add normal css into the condition. </p>
+        <p>So you just state a condition and what formatting should apply if that condition is true. You can include several CSS rules within a single @media query. </p>
     </main>
     <footer>
         <p> <a href="#header">Back to top</a><br>
