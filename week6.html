@@ -14,10 +14,37 @@
     <main>
         <h2>Media Queries</h2>
         <p>MQ allow to apply different CSS styles depending on a device's media type (e.g. print vs screen), screen resolution, orientation, aspect ration, width and height, etc. More on <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">W3 schools here</a>.</p>
-        <p>Media Queries are implemented for specific resolutions, and they act upon CSS styling. Essentially, they work conditionally. It starts with a @media thingy, then has a rule, i.e. <br>
+        <p>Media Queries are implemented for specific resolutions, and they act upon CSS styling. Essentially, they work conditionally. It starts with a @media thingy, then has a rule, i.e. <br> </p>
             <div class="code">@media (max-width: 1250px){...}</div><br> 
-        and then you just add normal css into the condition. </p>
+        <p>and then you just add normal css into the condition. </p>
         <p>So you just state a condition and what formatting should apply if that condition is true. You can include several CSS rules within a single @media query. </p>
+        <p>There was a dark age when everyone started using Internet, but the layout options were terrible. Like, using tables for the whole webpage (wink, wink). But then we got...</p>
+        <h2>Flexbox</h2>
+        <p>Aligning and distribute space within a container, and everything. It is intended for small-scale layouts, like e.g. centering. Grid is for the bigger things.</p>
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Flexbox resource</a>
+        <p>It works with containers and the elements that live within the container (its children). You can use any container, but usually focus on the semantically empty containers, like div. </p>
+        <div class="flexbox-container">
+            <div class="flexbox-item">Item 1</div>
+            <div class="flexbox-item">Item 1</div>
+            <div class="flexbox-item-mini"><div>Item item</div></div>
+            <div class="flexbox-item">Item 1</div>
+            <div class="flexbox-item">Item 1</div>
+            <div class="flexbox-item">Item 1</div>
+        </div>
+        <p>These children are all <span class="code">justify-content: space-around.</span></p>
+        <p>It starts by adding the display:flex attribute to the CSS for the element in question. </p>
+        <p>The elements within the container will be spaced out to fit the page, even when you end up changing the page dimensions. Even without media queries!</p>
+        <p>Best way to practice (and learn) Flexbox is with <a href="https://flexboxfroggy.com/" target="_blank">the FLEXBOX FROGGY game </a>!!!!</p>
+        <p><strong>justify-content</strong> does the hoizontal thingy</p>
+        <p><strong>align-items</strong> does the vertical thingy</p>
+        <p>Values to play around with:</p>
+        <ul>
+            <li>flex-start - top or left</li>
+            <li>flex-end - bottom or right</li>
+            <li>center</li>
+            <li>space-around</li>
+            <li>space-between</li>
+        </ul>
     </main>
     <footer>
         <p> <a href="#header">Back to top</a><br>

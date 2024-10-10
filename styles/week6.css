@@ -12,6 +12,11 @@ body{
     font-size: 24px;
 }
 
+footer{
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
 .code{
     background-color: white;
 }
@@ -26,6 +31,9 @@ body{
     header{
         background-color: brown;
     }
+    footer{
+        background-color: rgb(255, 174, 149);
+    }
 }
 
 @media (min-width: 768px) {
@@ -38,4 +46,31 @@ body{
     footer{
         background-color: rgb(231, 156, 156);
     }
+}
+
+/* let's define a flexbox container class as a flex vontainer */
+.flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* and the kiddies */
+.flexbox-item{
+    background-color: antiquewhite;
+    width: 200px;
+    margin: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.flexbox-item-mini{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 175, 99);
+    width: 200px;
+    margin: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
 }
