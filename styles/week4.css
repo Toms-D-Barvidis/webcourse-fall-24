@@ -10,7 +10,7 @@ main {
 p {
     background-color: rgb(222, 192, 157);
     border: 1cm;
-    border-radius: ;
+    border-radius: 5px;
 }
 strong{
     color: blueviolet;
