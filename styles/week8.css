@@ -1,5 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 5%;
     background-color: blanchedalmond;
+}
+
+.container-transformation{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* rotate on hover */
+
+
+.fox-box:hover{
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+
+.wolf-box:hover{
+    box-shadow: 10px 10px 15px 10px;
+    transition: box-shadow 0.5s;
+}
+
+.lynx-box:hover{
+    transform: scale(1.5);
+    transition: transform 0.5s;
+}
+
+.mink-box:hover{
+    transform: skew(20deg);
+    transition: transform 0.5s;
+}
+
+/* @keyframes myskew {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+    50% {
+        transform: skew(20deg, 0deg);
+    }
+}
+
+.squirrel-box:hover{
+    myskew
+} */
+
+/* The idea was to make it transform back and forth infinitely */
+
+/* .squirrel-box:hover {
+    animation: mymove 2.5s infinite;
+}
+
+@keyframes mymove{
+    50%%{
+        translate: 10;
+    }
+} */
+
+.squirrel-box{
+    
 }
