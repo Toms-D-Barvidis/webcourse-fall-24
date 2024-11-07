@@ -21,8 +21,39 @@ document.getElementById("comparison1").innerText = 5 ==5;
 
 const comparison2 = document.getElementById("comparison2")
 comparison2.innerText = 5 === '5'
+comparison2.innerText += " (some extra text)"
 
 const comparison3 = document.getElementById("comparison3");
 const result3 = 5!== 4;
 comparison3.innerText = result3;
 
+console.log("Both sides are true >> true");
+console.log("5 === 5 && 5 === 5",(5 === 5) && (5 === 5));
+console.log("One is true, one is false >> false");
+console.log("5 === 5 && 5 === 6",(5 === 5) && (5 === 6));
+console.log("Only one needs to be true in OR for it to >> true");
+console.log("5 === 5 || 5 === 4",(5 === 5) || (5 === 4));
+console.log("5 === 3 || 5 === 1",(5 === 3) && (5 === 1));
+console.log("!(5 === 6)",(!(5 === 6)));
+
+
+let toggle = true;
+document.getElementById("toggle").innerText = toggle;
+
+let isRaining = true;
+
+if(isRaining) {
+console.log("It is raining");
+} else {
+console.log("It's sunny!")
+}
+
+let age = 18;
+
+if(age > 120){
+    console.log("Too old")
+} else if (age < 18) {
+    console.log("Too young")
+} else {
+    console.log("You are", age, ". Go vote!")
+}
