@@ -70,3 +70,44 @@ const ul = document.querySelector("#list");
 addToList(ul, "Yabba")
 addToList(ul, "Dabba");
 addToList(ul, "Doo");
+
+// default values
+function greet(firstName = "Mr.", lastName = "Stranger", opening = "Hello "){
+    return opening + ", " + firstName + " " + lastName + "!";
+}
+
+console.log(greet("Johnny", "Lokh", "Sup"));
+
+addToList(ul, greet());
+
+// Event LISTENERS
+// Let's make whole body change color
+
+// define the action
+function changeBackgroundColor(){
+    console.log("Get body");
+    const body = document.querySelector("body");
+    console.log("Generate random color");
+    color = "rgb(" + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ")";
+    console.log(color);
+    body.style.backgroundColor = color;
+}
+
+const button = document.querySelector("#button");
+
+button.addEventListener("click", changeBackgroundColor);
+
+
+
+
+
+let counter = 1;
+
+function incrementCounter(){
+    const counterElement = document.querySelector("#counter");
+    counterElement.textContent = counter;
+    counter++;
+}
+
+const counterButton = document.querySelector("#counter-button");
+counterButton.addEventListener("click", incrementCounter);
