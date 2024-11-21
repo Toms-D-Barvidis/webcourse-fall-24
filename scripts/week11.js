@@ -31,15 +31,26 @@ switchExample.textContent = message;
 
 // WHILE LOOPS
 
+console.log("A WHILE loop.")
 let i = 1;
 while (i <= 10){
     console.log(i);
     i++;
 }
 
+console.log("Some random script that chages div content.")
 let j = 1;
 while (j <= 3){
-    const block = document.querySelector(".block-" + j);
+    const block = document.querySelector("#block-" + j);
     block.textContent += " yabbadabba doo " + j;
     j++;
+}
+
+// while(true) {
+//     console.log("Infinite loop!");
+//     break;
+// }
+console.log("Now a FOR loop!")
+for (let k = 1; k <= 5; k++){
+    console.log(k)
 }
