@@ -111,3 +111,18 @@ function incrementCounter(){
 
 const counterButton = document.querySelector("#counter-button");
 counterButton.addEventListener("click", incrementCounter);
+
+const color = "yellow"
+
+function mysteryFun(color) {
+
+    if (color !== "green" || color !== "blue") {
+  
+      color = "red";
+  
+    }
+  
+    console.log(color);  
+  }
+
+mysteryFun(color)
